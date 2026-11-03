@@ -1,4 +1,4 @@
-__pycache__/
+﻿__pycache__/
 *.pyc
 *.pyo
 *.spec
@@ -7,3 +7,7 @@ dist/
 .venv/
 venv/
 *.log
+
+# 发行物由 GitHub Release 分发，不纳入仓库
+KR3OriginsTrainer.exe
+KR3OriginsTrainer_*.zip

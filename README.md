@@ -98,10 +98,19 @@ Kingdom Rush Origins.exe -custom_script kr3_bridge
 3. 建议首次使用前备份 `%APPDATA%\kingdom_rush_origins` 目录。
 4. 仅供单人离线游戏使用，请勿用于联机或排行榜。
 
-## 七、参考
+## 七、参考与致谢
 
-- MIO-456/Lumi_Nox 的 Kingdom Rush 逆向工程笔记
-- Nolanse/KingdomRushFrontiersTrainer 的实现思路
+本项目的接口认知与设计思路完全建立在以下两份公开资料之上，特此致谢：
+
+1. **[MIO-456/Lumi_Nox](https://github.com/MIO-456/Lumi_Nox)** — 《Kingdom Rush AI Bot 逆向工程笔记》
+   <https://github.com/MIO-456/Lumi_Nox/blob/main/docs/games/kingdom-rush-reverse-engineering.md>
+   提供了最重要的基础情报：游戏基于 LÖVE 引擎、exe 内嵌 ZIP 可用 Python `zipfile` 直接解包、`game.store` 为状态容器、`game.simulation` 为 ECS 实体管理等关键结论，本项目的字段定位全部由这份笔记起步。
+
+2. **[Nolanse/KingdomRushFrontiersTrainer](https://github.com/Nolanse/KingdomRushFrontiersTrainer)**
+   <https://github.com/Nolanse/KingdomRushFrontiersTrainer>
+   提供了「外部 GUI + 游戏内桥接脚本」这一架构范本与功能划分思路，本项目的修改器形态与功能覆盖面参考其设计。
+
+感谢两位作者公开分享逆向成果与实现思路。若这些资料对你有帮助，请同样给原项目点 Star。
 
 ## 免责声明
 
